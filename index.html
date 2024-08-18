@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Prompt Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generate Your Perfect Prompt</h1>
+        <p class="reference-link">
+            <a href="https://gptbot.io/chatgpt-prompts/" target="_blank">Click here for more ChatGPT prompts and inspiration.</a>
+        </p>
+
+        <!-- Category Section -->
+        <div class="section">
+            <label for="category">Category</label>
+            <select id="category" onchange="filterRoles()">
+                <option value="" disabled selected>Select a category...</option>
+                <option value="Assistant">Assistant</option>
+                <option value="Business">Business</option>
+                <option value="Coding">Coding</option>
+                <option value="Copywriting">Copywriting</option>
+                <option value="Design">Design</option>
+                <option value="Education">Education</option>
+                <option value="Finances">Finances</option>
+                <option value="Health">Health</option>
+                <option value="Legal">Legal</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Productivity">Productivity</option>
+                <option value="Project Management">Project Management</option>
+                <option value="SaaS">SaaS</option>
+                <option value="SEO">SEO</option>
+                <option value="Travel">Travel</option>
+            </select>
+        </div>
+
+        <!-- Role/Identity Section -->
+        <div class="section">
+            <label for="role">Role/Identity</label>
+            <select id="role">
+                <option value="" disabled selected>Select a role...</option>
+            </select>
+        </div>
+
+        <!-- Context Section -->
+        <div class="section">
+            <label for="context">Context</label>
+            <textarea id="context" rows="3" placeholder="Describe the situation or relevant facts..."></textarea>
+        </div>
+
+        <!-- Task Section -->
+        <div class="section">
+            <label for="query">Task</label>
+            <textarea id="query" rows="3" placeholder="Describe the specific task..."></textarea>
+        </div>
+
+        <!-- Output Format Section -->
+        <div class="section">
+            <label for="format">Output Format</label>
+            <select id="format">
+                <option value="" disabled selected>Select an output format...</option>
+                <option value="bullet points">Bullet Points</option>
+                <option value="paragraph">Paragraph</option>
+                <option value="list">List</option>
+            </select>
+        </div>
+
+        <!-- Writing Style Section -->
+        <div class="section">
+            <label for="writingStyle">Writing Style</label>
+            <select id="writingStyle">
+                <option value="" disabled selected>Select a writing style...</option>
+                <option value="Formal">Formal</option>
+                <option value="Informal">Informal</option>
+                <option value="Technical">Technical</option>
+                <option value="Conversational">Conversational</option>
+            </select>
+        </div>
+
+        <!-- Tone Section -->
+        <div class="section">
+            <label for="tone">Tone</label>
+            <select id="tone">
+                <option value="" disabled selected>Select a tone...</option>
+                <option value="Professional">Professional</option>
+                <option value="Casual">Casual</option>
+                <option value="Persuasive">Persuasive</option>
+                <option value="Neutral">Neutral</option>
+            </select>
+        </div>
+
+        <!-- Examples Section -->
+        <div class="section">
+            <label for="examples">Examples (Optional)</label>
+            <textarea id="examples" rows="3" placeholder="Provide examples if necessary..."></textarea>
+        </div>
+
+        <!-- Generate and Copy Buttons -->
+        <div class="button-group">
+            <button onclick="generatePrompt()" class="generate-button">Generate Prompt</button>
+        </div>
+
+        <!-- Output Area -->
+        <div class="output-section">
+            <h2>Generated Prompt:</h2>
+            <div id="generated-prompt" class="prompt-output"></div>
+            <p id="copy-message" class="copy-message"></p>
+        </div>
+        <div class="button-group">
+            <button onclick="copyPrompt()" class="copy-button">Copy</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+}
+
+.description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.generate-button, .copy-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.generate-button:hover, .copy-button:hover {
+    background-color: #0056b3;
+}
+
+.output-section {
+    margin-top: 30px;
+}
+
+.prompt-output {
+    padding: 15px;
+    background-color: #e9ecef;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: "Courier New", Courier, monospace;
+    white-space: pre-wrap;
+}
+
+.copy-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.reference-link {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reference-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.reference-link a:hover {
+    text-decoration: underline;
+}
